@@ -26,24 +26,32 @@
                         <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
                         
                         
                         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Lista Zadań Bolka i Lolka" FontSize="25" FontWeight="DemiBold" Margin="0,20,0,30"></TextBlock>
                         
-                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa zadania: " VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa zadania: " FontWeight="SemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                         <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"></TextBox>
-                        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10" FontWeight="SemiBold">Dodaj</Button>
+                        <Button Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"  FontWeight="SemiBold">Dodaj</Button>
                         
-                        <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,15,0,0"> Kto ma wykonać zadanie?</TextBlock>
-                        <ComboBox Grid.Row="3" Grid.Column="1" Name="CharacterComboBox">
+                        <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,15,0,0" FontWeight="SemiBold"> Kto ma wykonać zadanie?</TextBlock>
+                        <ComboBox Grid.Row="3" Grid.Column="1" Name="CharacterComboBox" VerticalAlignment="Center" Margin="0,5,0,0">
                                 <ComboBoxItem Content="Bolek"></ComboBoxItem>
                                 <ComboBoxItem Content="Lolek"></ComboBoxItem>
                         </ComboBox>
-                        
-                        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
+                        <Border Grid.Row="3" Grid.Column="2">
                                 <Image Name="CharacterImage"></Image>
                         </Border>
+                        
+                        <TextBlock Grid.Row="5" Grid.Column="0" Text="Priorytet zadania:" Grid.ColumnSpan="2" FontWeight="SemiBold" Margin="0,15,0,0" HorizontalAlignment="Center"></TextBlock>
+                        <RadioButton Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Content="Niski" Name="Low" GroupName="Priority"  Margin="0,5,0,0" HorizontalAlignment="Center"/>
+                        <RadioButton Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Content="Normalny" Name="Normal"  GroupName="Priority"  HorizontalAlignment="Center"/>
+                        <RadioButton Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Wysoki" Name="High"  GroupName="Priority" HorizontalAlignment="Center"/>
+                        
+                        
                         
                 </Grid>
                 
