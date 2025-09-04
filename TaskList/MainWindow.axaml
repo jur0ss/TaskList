@@ -29,22 +29,23 @@
                         </Grid.ColumnDefinitions>
                         
                         
+                        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Lista Zadań Bolka i Lolka" FontSize="25" FontWeight="DemiBold" Margin="0,20,0,30"></TextBlock>
+                        
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa zadania: " VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"></TextBox>
+                        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10" FontWeight="SemiBold">Dodaj</Button>
+                        
+                        <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,15,0,0"> Kto ma wykonać zadanie?</TextBlock>
+                        <ComboBox Grid.Row="3" Grid.Column="1" Name="CharacterComboBox">
+                                <ComboBoxItem Content="Bolek"></ComboBoxItem>
+                                <ComboBoxItem Content="Lolek"></ComboBoxItem>
+                        </ComboBox>
+                        
+                        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
+                                <Image Name="CharacterImage"></Image>
+                        </Border>
                         
                 </Grid>
                 
         </ScrollViewer>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 </Window>
