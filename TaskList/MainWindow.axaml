@@ -63,7 +63,7 @@
                         
                         <ListBox Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Name="TaskListBox" Margin="0,15,0,0"></ListBox>
                         
-                        <Button Grid.Row="14" Grid.Column="0" Name="DeleteTask" Content="Usuń zadanie" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+                        <Button Grid.Row="14" Grid.Column="0" Name="DeleteTaskButton" Content="Usuń zadanie" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
                         
                         
                         

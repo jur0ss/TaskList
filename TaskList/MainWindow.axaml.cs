@@ -12,6 +12,7 @@ public partial class MainWindow : Window
         InitializeComponent();
         
         AddTaskButton.Click += AddTaskButton_Click;
+        DeleteTaskButton.Click += DeleteTaskButton_Click;
         // SummaryButton.Click += SummaryButton_Click;
     }
 
@@ -30,10 +31,15 @@ public partial class MainWindow : Window
         TaskListBox.Items.Add(task);
 
         TaskName.Text = "";
-
-
     }
     
+    private void DeleteTaskButton_Click(object? sender, RoutedEventArgs e)
+    {
+        if (TaskListBox.SelectedItem != null)
+        {
+            TaskListBox.Items.Remove(TaskListBox.SelectedItem);
+        }
+    }
     
     
     
