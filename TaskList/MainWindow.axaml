@@ -65,6 +65,8 @@
                         
                         <Button Grid.Row="14" Grid.Column="0" Name="DeleteTaskButton" Content="Usuń zadanie" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
                         
+                        <Calendar Name="Calendar" Grid.Row="15" Grid.Column="0" Margin="0,15,0,0"></Calendar>
+                        
                         
                         
                 </Grid>
